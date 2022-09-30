@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style123.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+
+
+    <header id="head1" class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a href="index.html" class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+
+                <img src="finallogo2.png" alt="" height="70px" width="70px">
+                <span class="ml-3 text-xl"></span>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+
+                <a href="about.html" class="mr-5 hover:text-white">Team</a>
+
+                <a href="index.html#contact" class="mr-5 hover:text-white">Contact</a>
+                <!-- <a class="mr-5 hover:text-white">Services</a> -->
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">Services
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="development.html">Development</a>
+                        <a href="vapt.html">VAPT</a>
+
+                    </div>
+                </div>
+
+                <script>
+                    /* When the user clicks on the button, 
+                                                                                                                                                                                                                                                                                                                                                    toggle between hiding and showing the dropdown content */
+                    function myFunction() {
+                        document.getElementById("myDropdown").classList.toggle("show");
+                    }
+
+                    // Close the dropdown if the user clicks outside of it
+                    window.onclick = function(e) {
+                        if (!e.target.matches('.dropbtn')) {
+                            var myDropdown = document.getElementById("myDropdown");
+                            if (myDropdown.classList.contains('show')) {
+                                myDropdown.classList.remove('show');
+                            }
+                        }
+                    }
+                </script>
+                <!-- <a href="vapt.html" class="mr-5 hover:text-white">VAPT Services</a> -->
+            </nav>
+
+        </div>
+    </header>
+
+
+
+    <!-- 
+    <div id="links" class="flex-container">
+        <div>
+            <a href="https://medium.com/@h4ck3rshivam">
+                <img href="" src="mediumlogo12.png" alt="">
+            </a><br>
+        </div>
+        <div id="instaimg">
+            <a href="https://www.instagram.com/shivamtaneja/">
+                <img src="instalogo.png" alt="">
+            </a><br>
+        </div>
+        <div id="twitterimg">
+            <a href="https://twitter.com/h4ck3r_shivam"><img src="twitterlogo.png" alt=""></a><br>
+        </div>
+        <div id="linkedinimg">
+            <a href="https://www.linkedin.com/in/tanejashivam/">
+                <img src="linkedinlogo.png" alt=""></a><br>
+        </div>
+        <div id="gitimg">
+            <a href="">
+                <img src="githublogo.png" alt=""></a><br>
+        </div>
+        <div id="fbimg">
+            <a href="https://www.facebook.com/h4ck3r.shivam/">
+                <img src="fblogo.png" alt=""></a><br>
+        </div>
+        <div>
+            <hr>
+        </div>
+    </div> -->
+
+
+
+
+    <section id="webdevhero1" class="text-gray-600 body-font">
+        <div id="webdevhero" class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">WEB DEVELOPMENT SERVICES
+                    <br class="hidden lg:inline-block">
+                </h1>
+                <p class="mb-8 leading-relaxed">Got the bug has been delivering impactful and engaging web products for over 2 years. Leverage our unique and broad-ranging expertise to build a rich-festrong textatured labor management portal, a speedy progressive web app, or even an
+                    AR-powered ecommerce store. We deliver comprehensive web development services with clear results and a clear development process.</p>
+                <p class="mb-8 leading-relaxed">For over 2 years, Got the bug has been delivering engaging web products for leading companies across over 20 different industries. Leverage our unique, broad-ranging expertise to build a rich-featured labor management portal, a speedy
+                    progressive web app, or even a ecommerce store with Augmented Reality. We deliver comprehensive web development services with clear results and a clear development process.</p>
+
+            </div>
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="text-gray-600 body-font">
+        <div id="typesofdev" class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">TYPES OF WEB DEVELOPMENT SERVICES</h1>
+
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative">
+                        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="typesofdev1.jpg">
+                        <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                            <h2 class="tracking-widest text-sm title-font font-medium text-purple-500 mb-1">Web Application Development Services</h2>
+                            <h1 class="title-font text-lg font-medium text-gray-900 mb-3"></h1>
+                            <p class="leading-relaxed">From Design to integration to maintenance, we offer fullcycle web application development services. We build apps that are secure, scalable, fast, and work well across all devices and platforms.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative">
+                        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="typesofdev2.jpg">
+                        <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                            <h2 class="tracking-widest text-sm title-font font-medium text-purple-500 mb-1">Ecommerce web devlopment services</h2>
+
+                            <p class="leading-relaxed">Build an online store with seamless and user-friendly experience, the rigth extensions, and reliable integration with your other processes. Our ecommerce web development services include building full-scale ecommerce platforms.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative">
+                        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="typesofdev3.jpg">
+                        <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                            <h2 class="tracking-widest text-sm title-font font-medium text-purple-500 mb-1">Java Web Development Services</h2><br><br>
+
+                            <p class="leading-relaxed">With over 2 years of providing reliable Java web development services, you can trust us to build a comprehensive web solution on Java for your business.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative">
+                        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="typesofdev4.jpg">
+                        <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                            <h2 class="tracking-widest text-sm title-font font-medium text-purple-500 mb-1">Magento Web Development Services</h2>
+
+                            <p class="leading-relaxed">Use our expertise to create and expand your online store on the Magento platform. Our Magento web development services can also help you transfer your existing store to the platform or add new extensions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative">
+                        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="typesofdev5.jpg">
+                        <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                            <h2 class="tracking-widest text-sm title-font font-medium text-purple-500 mb-1">Drupal Web Development Services</h2><br>
+
+                            <p class="leading-relaxed">From comprehensive module management to building a web solution from scratch, our Drupal web development services will cover your every business need.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative">
+                        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="typesofdev6.jpg">
+                        <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                            <h2 class="tracking-widest text-sm title-font font-medium text-purple-500 mb-1">Custom web Development Services for the Enterprise</h2>
+
+                            <p class="leading-relaxed">Build a custom solution for your business from the ground-up. Our wide-rangeing custom web developement services allow you to create cross-platform solutions for any industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="text-gray-600 body-font">
+        <div id="whatget1" class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                <img class="object-cover object-center rounded" alt="hero" src="whatyougetimg.jpg">
+            </div>
+            <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">What you get
+                    <br class="hidden lg:inline-block">
+                </h1>
+                <p class="mb-8 leading-relaxed">Our streamlined development process and experience allow us to deliver top-of-the-line web development services that tick all the boxes.</p>
+                <ol type="circle">
+                    <li>
+                        <h1>⚪ Carefully analyzed requirements</h1>
+                    </li>
+                    <li>
+                        <h1>⚪ Stand-out, easy-to-navigate UI & UX design</h1>
+                    </li>
+                    <li>
+                        <h1>⚪ Secure and scalable solution that works fast</h1>
+                    </li>
+                    <li>
+                        <h1>⚪ Responsive design</h1>
+                    </li>
+                    <li>
+                        <h1>⚪ Custom features</h1>
+                    </li>
+                    <li>
+                        <h1>⚪ Rich and engaging visuals</h1>
+                    </li>
+                    <li>
+                        <h1>⚪ Maintenance and support</h1>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <div id="ourtechno1">
+        <h4 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Our Technologies
+            <hr class="col-md-8 col-sm-6 col-xs-4">
+
+        </h4>
+
+        <div id="ourtechno123">
+            <img src="ruby.png" alt="">
+            <img src="python.png" alt="">
+            <img src="php.png" alt="">
+            <img src="angular.png" alt="">
+            <img src="react.png" alt="">
+            <img src="js.png" alt="">
+            <img src="nodejs.png" alt="">
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a href="index.html" id="footlogo" class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg> -->
+                <img src="finallogo2.png" alt="">
+                <span class="ml-3 text-xl">Got the bug</span>
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">Designed and created by
+                <a href="https://www.linkedin.com/in/tanejashivam/" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@shivamtaneja</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a href="https://www.facebook.com/h4ck3r.shivam/" class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://twitter.com/h4ck3r_shivam" class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/shivamtaneja/" class="ml-3 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/tanejashivam/" class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>

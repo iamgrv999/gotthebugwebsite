@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #0a192f;
+    color: #e6f1ff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#abcdef {
+    background-color: #0a192f;
+}
+
+#name {
+    padding-top: 50px;
+    font-size: 23px;
+    color: #a8b2d1;
+}
+
+#vaptapt h2 {
+    margin-top: 25px;
+}
+
+#vaptaptimg img {
+    margin-top: 20px;
+}
+
+#name1 {
+    font-size: 40px;
+}
+
+#herosection {
+    position: relative;
+    margin: auto;
+    height: 90%;
+}
+
+#head1 a {
+    font-size: 30px;
+}
+
+#img1 {
+    width: 350px;
+    height: 400px;
+    padding: 40px;
+    margin-left: 70px;
+    margin-right: 100px;
+}
+
+#more {
+    display: none;
+}
+
+#where {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+#whereone {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+#whereworked h2 {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+#whereworked {
+    padding: 8%;
+}
+
+#contact {
+    margin-top: -27%;
+}
+
+#contact h1 {
+    font-size: 50px;
+    color: #e6f1ff;
+}
+
+#testimonials2 {
+    padding: 8%;
+}
+
+#testimonials {
+    margin-top: -20%;
+}
+
+#testimonials h4 {
+    margin: auto;
+}
+
+#imgif {
+    box-sizing: border-box;
+}
+
+#testm {
+    padding: 10%;
+}
+
+#companiesworkedwith1 {
+    padding: 8%;
+}
+
+#whereworked span {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+#companiesworked h2 {
+    color: rgb(51, 155, 239);
+}
+
+#companiesworked2 h2 {
+    color: rgb(51, 155, 239);
+}
+
+#gmails {
+    position: fixed;
+    right: -15px;
+    bottom: 30%;
+    color: #e6f1ff;
+    transform: rotate(90deg);
+}
+
+#footlogo {
+    color: #e6f1ff;
+}
+
+#testimonials2 {
+    padding: 14%;
+    margin-top: -15%;
+}
+
+#testimonials h2 {
+    color: rgb(51, 155, 239);
+}
+
+#founderceo {
+    color: rgb(204, 196, 196);
+}
+
+#founderceo h1 {
+    color: #e6f1ff;
+}
+
+#ourteam1 h1 {
+    color: #e6f1ff;
+    font-size: 50px;
+}
+
+#ourteam1 img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+#ourteam1 h2 {
+    color: #e6f1ff;
+    font-size: 30px;
+}
+
+#ourteam1 {
+    margin-top: -10%;
+}
+
+#ourteam1 h3 {
+    color: #e6f1ff;
+    font-size: 18px;
+}
+
+#moremembers {
+    margin-top: -15%;
+    padding: 0 10% 0 10%;
+    color: rgb(204, 196, 196);
+}
+
+#moremembers p {
+    margin-left: 0%;
+    align-items: center;
+}
+
+#moremembers h2 {
+    color: #e6f1ff;
+    font-size: 25px;
+}
+
+#teamof4 {
+    display: flex;
+    justify-content: space-around;
+}
+
+#teamof4 p {
+    width: 200px;
+}
+
+#ihaveworked {
+    padding: 7%;
+    margin-top: -12%;
+}
+
+#ihaveworked h4 {
+    text-align: left;
+}
+
+#hero123 {
+    padding: 10%;
+    margin-top: -10%;
+    height: 900px;
+}
+
+#dpimg img {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    margin-left: 10%;
+}
+
+#links {
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    left: 25px;
+    bottom: 50%;
+    color: #e6f1ff;
+}
+
+#links img {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+}
+
+#links hr {
+    position: fixed;
+    color: #e6f1ff;
+    transform: rotate(90deg);
+    border-top: 1px solid #e6f1ff;
+    width: 500px;
+    left: -214px;
+    top: 106%;
+}
+
+#instaimg img {
+    bottom: 365px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+#twitterimg img {
+    bottom: 330px;
+    left: 25px;
+    width: 20px;
+    height: 20px;
+}
+
+#linkedinimg img {
+    bottom: 290px;
+    left: 25px;
+    width: 20px;
+    height: 20px;
+}
+
+#gitimg img {
+    bottom: 250px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+#fbimg img {
+    bottom: 220px;
+    left: 23px;
+    width: 20px;
+    height: 20px;
+}
+
+#webdevhero h1 {
+    color: #e6f1ff;
+    margin-top: 15%;
+}
+
+#webdevhero {
+    margin: auto;
+    width: 80%;
+    margin-top: -5%;
+}
+
+#webdevhero1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#typesofdev h1 {
+    color: #e6f1ff;
+}
+
+#typesofdev {
+    margin-top: -10%;
+}
+
+#typesofdev img {
+    padding: 0px;
+    margin: 2px;
+    width: 500px;
+    height: 250px;
+    box-sizing: border-box;
+}
+
+#whatget1 h1 {
+    color: #e6f1ff;
+    margin: 8px;
+}
+
+#whatget1 img {
+    margin-left: 15%;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+#vapthero h1 {
+    color: white;
+    font-size: 70px;
+}
+
+#vapthero p {
+    color: #e6f1ff;
+    font-size: 20px;
+}
+
+#vapthero {
+    background-image: url(vapthero.jpeg);
+}
+
+#vaptherobg {
+    background: rgba(0, 0, 0, 0.815);
+}
+
+#welcome h1 {
+    color: #e6f1ff;
+    font-size: 50px;
+}
+
+#welcome p {
+    color: #e6f1ff;
+    font-size: 20px;
+}
+
+#services1 {
+    margin-top: -7%;
+}
+
+#services1 img {
+    margin-top: 5px;
+}
+
+#aptservice {
+    margin-top: 5%;
+}
+
+#services1 h1 {
+    color: #e6f1ff;
+    font-size: 50px;
+}
+
+#services1 h2 {
+    color: #e6f1ff;
+}
+
+#service4 {
+    margin-top: 10%;
+    background-color: aqua;
+}
+
+#services1 img {
+    padding: 3px
+}
+
+#aptsecurity img {
+    padding: 7px;
+    margin-top: 10%;
+}
+
+#incidentservice img {
+    padding: 9px;
+}
+
+#workedwith1 {
+    margin: 15%;
+    margin-top: 0%;
+}
+
+#workedwith123 {
+    display: flex;
+    margin-top: 10%;
+    justify-content: space-evenly;
+}
+
+#workedwith123 img {
+    width: 100px;
+    height: 100px;
+}
+
+#ourtechno1 {
+    margin: 15%;
+    margin-top: 0%;
+}
+
+#ourtechno123 {
+    display: flex;
+    margin-top: 10%;
+    justify-content: space-evenly;
+}
+
+#ourtechno123 img {
+    width: 100px;
+    height: 100px;
+}

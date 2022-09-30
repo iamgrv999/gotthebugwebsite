@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style123.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+
+
+
+    <header id="head1" class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a href="index.html" class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+
+                <img src="finallogo2.png" alt="" height="70px" width="70px">
+                <span class="ml-3 text-xl"></span>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+
+                <a href="about.html" class="mr-5 hover:text-white">Team</a>
+
+                <a href="index.html#contact" class="mr-5 hover:text-white">Contact</a>
+                <!-- <a class="mr-5 hover:text-white">Services</a> -->
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">Services
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="development.html">Development</a>
+                        <a href="vapt.html">VAPT</a>
+
+                    </div>
+                </div>
+
+                <script>
+                    /* When the user clicks on the button, 
+                                                                                                                                                                                                                                                                                                                                                                                                                                        toggle between hiding and showing the dropdown content */
+                    function myFunction() {
+                        document.getElementById("myDropdown").classList.toggle("show");
+                    }
+
+                    // Close the dropdown if the user clicks outside of it
+                    window.onclick = function(e) {
+                        if (!e.target.matches('.dropbtn')) {
+                            var myDropdown = document.getElementById("myDropdown");
+                            if (myDropdown.classList.contains('show')) {
+                                myDropdown.classList.remove('show');
+                            }
+                        }
+                    }
+                </script>
+                <!-- <a href="vapt.html" class="mr-5 hover:text-white">VAPT Services</a> -->
+            </nav>
+
+        </div>
+    </header>
+
+
+
+
+
+
+
+    <!-- <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <h4 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">About Me
+                    <hr class="col-md-8 col-sm-6 col-xs-4">
+
+                </h4>
+                <p class="mb-8 leading-relaxed">Hello! My name is Shivam Taneja and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog
+                    button taught me a lot about HTML & CSS!
+                </p>
+                <p class="mb-8 leading-relaxed">Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a huge corporation, and now starting my own company . My main focus these days is building accessible, inclusive products and digital experiences
+                    at Got The Bug for a variety of clients.
+
+                </p>
+                <p class="mb-8 leading-relaxed">I am also going to launch a course that covers everythingyou need to build a web app using Node & React. Course related to web application testing and api testing are also in pipeline . <br> Not only just building, I also enjoy breaking
+                    things too . Penetration testing and vulnerabilty assesment play a major role in securing web apps against potential attacks and data breaches . I have worked with more than 40 + clients and small companies providing them with services
+                    like VAPT , network secuity , incident management , application security testing etc .
+                </p>
+
+
+
+            </div>
+            <div id="img1" class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <img class="object-cover object-center rounded" alt="hero" src="IMG_3543.jpg" height="200px">
+            </div>
+        </div>
+    </section> -->
+
+
+
+
+
+    <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div id="dpimg" class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                <img class="object-cover object-center rounded" alt="hero" src="shivam.jpg">
+            </div>
+            <div id="founderceo" class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Founder and CEO
+                    <br class="hidden lg:inline-block">Shivam Taneja
+                </h1>
+                <p class="mb-8 leading-relaxed">Hello! My name is Shivam Taneja and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog
+                    button taught me a lot about HTML & CSS!</p>
+
+                <p class="mb-8 leading-relaxed">Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a huge corporation, and now starting my own company . My main focus these days is building accessible, inclusive products and digital experiences
+                    at Got The Bug for a variety of clients.
+
+                </p>
+                <p class="mb-8 leading-relaxed">I am also going to launch a course that covers everythingyou need to build a web app using Node & React. Course related to web application testing and api testing are also in pipeline . <br> Not only just building, I also enjoy breaking
+                    things too . Penetration testing and vulnerabilty assesment play a major role in securing web apps against potential attacks and data breaches . I have worked with more than 40 + clients and small companies providing them with services
+                    like VAPT , network secuity , incident management , application security testing etc .
+                </p>
+                <div class="flex justify-center">
+                    <!-- <button href="www.linkedin.com/in/tanejashivam/" class="inline-flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg">Know More</button> -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- <div id="links" class="flex-container">
+        <div>
+            <a href="https://medium.com/@h4ck3rshivam">
+                <img href="" src="mediumlogo12.png" alt="">
+            </a><br>
+        </div>
+        <div id="instaimg">
+            <a href="https://www.instagram.com/shivamtaneja/">
+                <img src="instalogo.png" alt="">
+            </a><br>
+        </div>
+        <div id="twitterimg">
+            <a href="https://twitter.com/h4ck3r_shivam"><img src="twitterlogo.png" alt=""></a><br>
+        </div>
+        <div id="linkedinimg">
+            <a href="https://www.linkedin.com/in/tanejashivam/">
+                <img src="linkedinlogo.png" alt=""></a><br>
+        </div>
+        <div id="gitimg">
+            <a href="">
+                <img src="githublogo.png" alt=""></a><br>
+        </div>
+        <div id="fbimg">
+            <a href="https://www.facebook.com/h4ck3r.shivam/">
+                <img src="fblogo.png" alt=""></a><br>
+        </div>
+        <div>
+            <hr>
+        </div>
+    </div>
+ -->
+
+
+
+
+
+
+
+    <section id="ourteam1" class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest">OUR TEAM</h1>
+                <!-- <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p> -->
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 lg:w-1/2">
+                    <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="adityaimg.jpg">
+                        <div class="flex-grow sm:pl-8">
+                            <h2 class="title-font font-medium text-lg text-gray-900">Aditya Jain</h2>
+                            <h3 class="text-gray-500 mb-3">Security Analyst</h3>
+                            <p class="mb-4">Remarkable experience in manual penetration and application testing. Profound knowledge of network architectures, operating systems, application software and cyber security tools. Huge knowledge of managing information assurance
+                                evaluation tests. Wide knowledge of scripting languages, Perl, Python. Solid understanding of information security and applied cryptographic protocols. Proficiency in scripting, Unix operating systems and windows. Ability
+                                to exploit recognized vulnerabilities.</p>
+                            <span class="inline-flex">
+                    
+                  </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/2">
+                    <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="anubhavimg.jpg">
+                        <div class="flex-grow sm:pl-8">
+                            <h2 class="title-font font-medium text-lg text-gray-900">Anubhav Singh Seasodia</h2>
+                            <h3 class="text-gray-500 mb-3">Chief Information Security Officer</h3>
+                            <p class="mb-4">More than 7 years of experience in Web Application Securty, Logging arid Alerting, Security Design, Penetration Testing, Secure Coding, Mobile Application Security, Application Security Contro and validation, Risk Assessments
+                                Regulatory Compliance and Secure Software Development Life Cycle (secure SDLC). Hands-on experience in developing threat models, security controls, threat analysis, creation of risk control matrices and risk mitigation
+                                strategies. Hands on with Penetration Testing, DAST, SAST and manual ethical hacking. Experience in vulnerability assessment and penetration testing using various tools like Burp Suite, OWASP ZAP proxy, Accunetix, NMAP.
+                            </p>
+                            <span class="inline-flex">
+                    
+                  </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="p-4 lg:w-1/2">
+                    <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/206x206">
+                        <div class="flex-grow sm:pl-8">
+                            <h2 class="title-font font-medium text-lg text-gray-900">Henry Letham</h2>
+                            <h3 class="text-gray-500 mb-3">Designer</h3>
+                            <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                            <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="moremembers" class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="text-center mb-20">
+
+
+            </div>
+            <div id="teamof4" class="flex flex-wrap -m-4">
+                <div class="p-4 lg:w-1/4 sm:w-1/2 w-full">
+                    <h2 class="font-medium title-font tracking-widest text-gray-900 mb-4 text-sm text-center sm:text-left">Chirag Shukla</h2>
+                    <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Senior Software engineer with 5 years of experience in web and application development. Has worked with dunzo in it's initial days.</p>
+
+                </div>
+                <div class="p-4 lg:w-1/4 sm:w-1/2 w-full">
+                    <h2 class="font-medium title-font tracking-widest text-gray-900 mb-4 text-sm text-center sm:text-left">Puneet Munjal</h2>
+                    <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Ex Paytm and Ex infosys. 6 years of experience in Front end & UI/UX development . Skilled in react , vue , angular and node.js</p>
+
+                </div>
+                <div class="p-4 lg:w-1/4 sm:w-1/2 w-full">
+                    <h2 class="font-medium title-font tracking-widest text-gray-900 mb-4 text-sm text-center sm:text-left">Pooru Berry</h2>
+                    <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Soc Analyst with 4 years of experience as an auditor . Has 3 years of experience in practicing cyber law as a lawyer. Working for comapnies like delloite and kpmg</p>
+
+                </div>
+                <div class="p-4 lg:w-1/4 sm:w-1/2 w-full">
+                    <h2 class="font-medium title-font tracking-widest text-gray-900 mb-4 text-sm text-center sm:text-left">Anindita Mahanta</h2>
+                    <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Has 7 years of experience in full stack development. Worked in Paytm and Zomato also.</p>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a href="index.html" id="footlogo" class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg> -->
+                <img src="finallogo2.png" alt="">
+                <span class="ml-3 text-xl">Got the bug</span>
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">Designed and created by
+                <a href="https://www.linkedin.com/in/tanejashivam/" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@shivamtaneja</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a href="https://www.facebook.com/h4ck3r.shivam/" class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://twitter.com/h4ck3r_shivam" class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/shivamtaneja/" class="ml-3 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/tanejashivam/" class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+    </footer>
+
+</body>
+
+</html>

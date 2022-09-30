@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style123.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+
+
+    <header id="head1" class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a href="index.html" class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+
+                <img src="finallogo2.png" alt="" height="70px" width="70px">
+                <span class="ml-3 text-xl"></span>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+
+                <a href="about.html" class="mr-5 hover:text-white">Team</a>
+
+                <a href="index.html#contact" class="mr-5 hover:text-white">Contact</a>
+                <!-- <a class="mr-5 hover:text-white">Services</a> -->
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">Services
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="development.html">Development</a>
+                        <a href="vapt.html">VAPT</a>
+
+                    </div>
+                </div>
+
+                <script>
+                    /* When the user clicks on the button, 
+                                                                                                                            toggle between hiding and showing the dropdown content */
+                    function myFunction() {
+                        document.getElementById("myDropdown").classList.toggle("show");
+                    }
+
+                    // Close the dropdown if the user clicks outside of it
+                    window.onclick = function(e) {
+                        if (!e.target.matches('.dropbtn')) {
+                            var myDropdown = document.getElementById("myDropdown");
+                            if (myDropdown.classList.contains('show')) {
+                                myDropdown.classList.remove('show');
+                            }
+                        }
+                    }
+                </script>
+                <!-- <a href="vapt.html" class="mr-5 hover:text-white">VAPT Services</a> -->
+            </nav>
+
+        </div>
+    </header>
+
+
+
+
+
+
+
+</body>
+
+</html>
